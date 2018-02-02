@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Martel");
+body {
+  width: 100%;
+  font-family: 'Rubik', 'serif';
+  background-color: white;
+}
+
+header nav {
+  min-height: 5.3125rem;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  header nav {
+    min-height: auto;
+  }
+}
+
+header nav .active {
+  border-bottom: 0.125rem solid #ffa326;
+  font-weight: 700;
+}
+
+header nav .navlogo {
+  font-family: Martel;
+  font-size: 1.625rem;
+  line-height: 1.063rem;
+  color: #0e1d2b;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  header nav .navlogo {
+    padding: 0.5rem 0;
+  }
+}
+
+header nav .navlogo span {
+  color: #ffa326;
+  font-weight: 700;
+}
+
+header nav li {
+  padding: 0 1.5625rem;
+  color: #0e1d2b;
+  font-family: Martel;
+  font-size: 1rem;
+  line-height: 1.063rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  header nav li {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+
+section {
+  min-height: 25rem;
+}
+
+#ourb .col-sm-6 {
+  padding: 12.5rem 0 6.25rem;
+}
+
+@media screen and (max-width: 600px) {
+  #ourb .col-sm-6 {
+    padding: 10.625rem 0;
+  }
+}
+
+#ourb p {
+  padding-left: 5.625rem;
+}
+
+@media screen and (max-width: 600px) {
+  #ourb p {
+    padding-left: 1.875rem;
+  }
+}
+
+#ourb .h__text {
+  font-family: Rubik;
+  font-size: 4.063rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+
+#ourb .unh__text {
+  font-family: Martel;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+#ourb .leftour {
+  min-height: 25rem;
+  background-image: url("../img/leftour.png");
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-color: #0e1d2b;
+}
+
+@media screen and (max-width: 600px) {
+  #ourb .leftour {
+    padding: 7.5rem 0 1.25rem;
+  }
+}
+
+#ourb .leftour > .h__text {
+  color: #ffa326;
+}
+
+#ourb .leftour > .unh__text {
+  color: #ffffff;
+}
+
+#ourb .rightour {
+  min-height: 25rem;
+  background-image: url("../img/rightour.png");
+  background-size: 100%;
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-color: #ffa326;
+}
+
+@media screen and (max-width: 600px) {
+  #ourb .rightour {
+    padding: 1.25rem 0;
+  }
+}
+
+#ourb .rightour > .h__text {
+  color: #ffffff;
+}
+
+#ourb .rightour > .unh__text {
+  color: #0e1d2b;
+}
+
+#ourb .rightour > .buy__text {
+  font-family: Martel;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+  color: #0e1d2b;
+}
+
+#ourb .rightour > .buy__text span {
+  cursor: pointer;
+  margin-left: 1.25rem;
+  padding: 0.3125rem 1.25rem;
+  background-color: white;
+  box-shadow: 0.188rem 0.325rem 0.506rem 0.056rem rgba(218, 139, 32, 0.75);
+}
+
+#ourb .rightour > .buy__text span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#ourb .rightour > .buy__text span img {
+  padding: 0 0.3125rem;
+}
+
+#burgs {
+  padding: 5rem 0;
+}
+
+#burgs .col-sm-4 {
+  padding: 1.25rem 0;
+  cursor: pointer;
+}
+
+#burgs .col-sm-4:hover {
+  border: 0.125rem solid #ffa326;
+}
+
+#burgs .burg__name {
+  padding-top: 1.5625rem;
+  color: #ffa326;
+  font-family: Rubik;
+  font-size: 1.438rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+#burgs .burg__descr {
+  color: #0e1d2b;
+  font-family: Martel;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+#burgs .burg__price {
+  text-align: center;
+  padding: 0.3125rem;
+  color: #0e1d2b;
+  background-color: #e1e1e1;
+}
+
+#burgs .burg__price > span {
+  padding: 0.3125rem;
+}
+
+#burgs .burg__price .price1 {
+  font-family: Martel;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+#burgs .burg__price .price2 {
+  font-family: Rubik;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+#wElse {
+  background-image: url("../img/welse.png");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+}
+
+#wElse .col-sm-7 {
+  padding: 9.375rem 0;
+}
+
+#wElse .col-sm-4 {
+  padding: 3.125rem 0;
+  border: 0.1875rem solid #ffa326;
+}
+
+#wElse .we__text {
+  color: #ffffff;
+  font-family: Rubik;
+  font-size: 3.75rem;
+  font-weight: 500;
+  line-height: 3.75rem;
+}
+
+#wElse ul {
+  width: 100%;
+  list-style: none;
+  padding-top: 1.5625rem;
+}
+
+#wElse ul p {
+  padding-top: 0.625rem;
+  color: #ffffff;
+  font-family: Martel;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+#wElse ul .tleft {
+  left: 0;
+}
+
+#wElse ul .tright {
+  position: absolute;
+  right: 1.25rem;
+}
+
+#gallery {
+  padding: 4.375rem 0;
+}
+
+#gallery .galleryTop {
+  height: 11.875rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  #gallery .galleryTop img {
+    padding: 0.3125rem 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+#gallery .galleryBot {
+  cursor: pointer;
+  max-width: 16.5%;
+}
+
+@media screen and (max-width: 960px) {
+  #gallery .galleryBot {
+    padding-top: 0.3125rem;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+#gallery .galleryBot img {
+  max-height: 5.9375rem;
+}
+
+@media screen and (max-width: 960px) {
+  #gallery .galleryBot img {
+    padding-top: 0.625rem;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+#gallery .gal__text {
+  padding-bottom: 4.375rem;
+}
+
+#gallery p {
+  text-align: center;
+  color: #0e1d2b;
+}
+
+#gallery .head__text {
+  font-family: Rubik;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+
+#gallery .descr__text {
+  font-family: Martel;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+#contact {
+  background-color: #0e1d2b;
+}
+
+#contact .cont__header {
+  padding: 2.1875rem 0;
+  background-color: #ffffff;
+  text-align: center;
+  color: #0e1d2b;
+}
+
+#contact .head__text {
+  font-family: Rubik;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+
+#contact .descr__text {
+  font-family: Martel;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+#contact .col-sm-6.leftone {
+  padding: 3.125rem 9.375rem;
+}
+
+@media screen and (max-width: 960px) {
+  #contact .col-sm-6.leftone {
+    padding: 1.25rem 0.3125rem;
+  }
+}
+
+#contact .col-sm-6.rightone {
+  padding: 3.125rem 5.625rem;
+}
+
+@media screen and (max-width: 960px) {
+  #contact .col-sm-6.rightone {
+    padding: 1.25rem 0.625rem;
+  }
+}
+
+#contact .form__text {
+  color: #ffffff;
+  font-family: Martel;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+
+#contact form button,
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding-left: 5px;
+  box-shadow: 0.188rem 0.325rem 2.631rem 0.056rem rgba(29, 59, 86, 0.75);
+  margin-bottom: 0.5rem;
+  border-color: #0e1d2b;
+}
+
+#contact form button::placeholder,
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: #0e1d2b;
+  font-family: Martel;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+#contact form textarea {
+  max-height: 5.625rem;
+}
+
+#contact form button {
+  padding: 0.5rem 0;
+  color: #ffffff;
+  font-family: Martel;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  background-color: #ffa326;
+  box-shadow: 0.188rem 0.325rem 2.631rem 0.056rem rgba(29, 59, 86, 0.75);
+  border-color: transparent;
+}
+
+#contact .address p {
+  padding: 0.625rem 0;
+  font-family: Martel;
+  font-size: 1.188rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+  color: #ffffff;
+}
+
+#contact .address p span {
+  font-size: 2.938rem;
+  font-weight: 800;
+  line-height: 2.875rem;
+  color: #ffa326;
+  padding-left: 0.625rem;
+}
+
+footer {
+  padding: 0.3125rem;
+  text-align: center;
+  background-color: #050b10;
+}
+
+footer p {
+  font-family: Martel;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  color: #ffa326;
+}
+
+#modality input {
+  margin: 0.3125rem 0;
+}
+
+#modality input::placeholder {
+  color: #0e1d2b;
+  font-family: Martel;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+#modality .pop__btn {
+  padding: 0.4375rem 0;
+  margin: 0.3125rem 0;
+  font-family: Martel;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  background-color: #ffa326;
+  color: #ffffff;
+}
+
+#modality .pop__text {
+  font-family: Rubik;
+  font-size: 1.438rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #ffa326;
+}
+
+#modality .form__text {
+  font-family: Martel;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #0e1d2b;
+}
+
+.modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    min-height: calc(100vh - 20px);
+  }
+}
