@@ -16,7 +16,7 @@
 
 
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
 
 </head>
 
@@ -34,7 +34,7 @@
           <div class="container-fluid">
             <p class="text-center"><img src="" alt="" class="pop__img"></p>
             <p class="pop__text text-center"></p>
-            <form action="noaction.js" class="d-flex flex-column">
+            <form action="noaction.js" class="flex flexdc">
               <p class="form__text text-center">Fill form and take it</p>
               <input id="inputity" type="text" name="full_name" placeholder="Write your full name here" required>
               <input type="email" name="email" placeholder="Email Address here" required>
@@ -55,8 +55,11 @@
 
       <div class="container">
         <a class="navlogo" href="#">BURGERS<span>.CO</span></a>
-
-        <ul class="navbar-nav d-flex flex-row justify-content-between align-items-center flex-wrap">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb1" aria-controls="navb1" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="navbar-collapse" id="navb1">
+        <ul class="navbar-nav flexcb flexdr flexwr">
 
           <li class="nav-item"><a href="#ourb" class="nav-link active">Home</a></li>
           <li class="nav-item"><a href="#burgs" class="nav-link">Our Burgers</a></li>
@@ -65,58 +68,59 @@
           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </div>
+      </div>
     </nav>
   </header>
   <main>
-    <div id="ourb">
+    <section id="ourb">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-6 leftour d-flex justify-content-center align-items-around flex-column">
+          <div class="col-sm-6 leftour flexca flexdc">
             <p class="h__text">We create<br> Burgers.</p>
             <p class="unh__text">Beautiful hand crafted burgers with tangy sauce <br>lettuce, onions, pickles and our specials.</p>
           </div>
-          <div class="col-sm-6 rightour d-flex justify-content-center align-items-around flex-column">
+          <div class="col-sm-6 rightour flexca flexdc">
             <p class="h__text">Delicious.</p>
             <p class="unh__text">Oh yes, they are as they are made with hands<br> and our chef loves them to the core</p>
             <p class="buy__text">Are they really ? <span><a href="#gallery">Show me <img src="img/burg.png" alt=""></a></span></p>
           </div>
         </div>
       </div>
-    </div>
-    <div id="burgs">
+    </section>
+    <section id="burgs">
       <div class="container">
         <div class="row">
-          <div class="col-sm-4 d-flex justify-content-center align-items-center flex-column product" data-toggle="modal" data-target="#modality">
+          <div class="col-sm-4 flexcc flexdc product" data-toggle="modal" data-target="#modality">
             <img src="img/burg1.png" alt="" class="product__photo">
             <p class="burg__name">Beef Bondy</p>
             <p class="burg__descr">Juicy hand cut beef with<br> Mango sauce fries.</p>
-            <span class="burg__price d-flex align-items-center"><img src="img/barbq.png" alt=""><span class="price1">345 KJ</span>
+            <span class="burg__price flexcc"><img src="img/barbq.png" alt=""><span class="price1">345 KJ</span>
             <span class="price2">$12.5</span></span>
           </div>
-          <div class="col-sm-4 d-flex justify-content-center align-items-center flex-column product" data-toggle="modal" data-target="#modality">
+          <div class="col-sm-4 flexcc flexdc product" data-toggle="modal" data-target="#modality">
             <img src="img/burg2.png" alt="" class="product__photo">
             <p class="burg__name">Chicken Mota</p>
             <p class="burg__descr">Beautiful chicken breast<br> with salsa sauce on top</p>
-            <span class="burg__price d-flex align-items-center"><img src="img/barbq.png" alt=""><span class="price1">345 KJ</span>
+            <span class="burg__price flexcc"><img src="img/barbq.png" alt=""><span class="price1">345 KJ</span>
             <span class="price2">$9.0</span></span>
           </div>
-          <div class="col-sm-4 d-flex justify-content-center align-items-center flex-column product " data-toggle="modal" data-target="#modality">
+          <div class="col-sm-4 flexcc flexdc product " data-toggle="modal" data-target="#modality">
             <img src="img/burg3.png" alt="" class="product__photo">
             <p class="burg__name">Double Beef</p>
             <p class="burg__descr">Yes! Double patty with<br> seculent sauce</p>
-            <span class="burg__price d-flex align-items-center"><img src="img/barbq.png" alt=""><span class="price1">545 KJ</span>
+            <span class="burg__price flexcc"><img src="img/barbq.png" alt=""><span class="price1">545 KJ</span>
             <span class="price2">$13.7</span></span>
           </div>
         </div>
       </div>
-    </div>
-    <div id="wElse">
+    </section>
+    <section id="wElse">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-sm-7 d-flex justify-content-center align-items-center flex-column">
+        <div class="row flexcc">
+          <div class="col-sm-7 flexcc flexdc">
             <p class="we__text align-self-center">Wait ! But we<br> also serve...</p>
           </div>
-          <div class="col-sm-4 d-flex justify-content-center align-items-center flex-column">
+          <div class="col-sm-4 flexcc flexdc">
             <ul>
 
               <li>
@@ -138,19 +142,19 @@
           </div>
         </div>
       </div>
-    </div>
-    <div id="gallery">
+    </section>
+    <section id="gallery">
       <div class="container">
         <div class="gal__text">
           <p class="head__text">Photos</p>
           <p class="descr__text">Beautiful pictues clicked by our Customers</p>
         </div>
-        <div class="row d-flex align-items-center flex-row justify-content-center">
+        <div class="row flexcc flexdr">
           <a href="img/photo1.png" class="galleryTop fancybox" rel="gallery1"><img src="img/photo1.png" alt=""></a>
           <a href="img/photo2.png" class="galleryTop fancybox" rel="gallery1"><img src="img/photo2.png" alt=""></a>
           <a href="img/photo3.png" class="galleryTop fancybox" rel="gallery1"><img src="img/photo3.png" alt=""></a>
         </div>
-        <div class="row d-flex align-items-center flex-row justify-content-center">
+        <div class="row flexcc flexdr">
           <a href="img/photo1.png" class="galleryBot fancybox" rel="gallery1"><img src="img/photo1.png"  alt=""></a>
           <a href="img/photo2.png" class="galleryBot fancybox" rel="gallery1"><img src="img/photo2.png"  alt=""></a>
           <a href="img/photo3.png" class="galleryBot fancybox" rel="gallery1"><img src="img/photo3.png"  alt=""></a>
@@ -160,14 +164,14 @@
 
         </div>
       </div>
-    </div>
-    <div id="contact">
+    </section>
+    <section id="contact">
       <div class="cont__header">
         <p class="head__text">Contact Us</p>
         <p class="descr__text">Beautiful pictues clicked by our Customers</p>
       </div>
       <div class="container">
-        <div class="row d-flex align-items-center flex-row justify-content-start">
+        <div class="row flexcs flexdr">
           <div class="col-sm-6 leftone">
             <form action="noaction.js" id="contactform" class="text-left">
               <p class="form__text">Fill this form to get in touch with us.</p>
@@ -188,7 +192,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
   </main>
   <footer>

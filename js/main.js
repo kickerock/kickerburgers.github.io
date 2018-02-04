@@ -25,4 +25,10 @@ $(document).ready(function() {
     }
   });
   $('.fancybox').fancybox();
+  if($(window).width() < 769) {
+    $('.navbar-toggler').show();
+    $('#navb1').addClass('collapse');
+  } else {
+    $('.navbar-toggler').hide();
+  }
 });

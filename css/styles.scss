@@ -1,55 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik');
-@import url('https://fonts.googleapis.com/css?family=Martel'); // Медиа
-$breakpoint-small: 600px;
-$breakpoint-med-small: 960px;
-$breakpoint-med: 1175px;
-@mixin screen($size, $type: max, $pixels: $breakpoint-small) {
-  @if $size == 'small' {
-    @media screen and ($type + -width: $breakpoint-small) {
-      @content;
-    }
-  } @else
-  if $size == 'med-small' {
-    @media screen and ($type + -width: $breakpoint-med-small) {
-      @content;
-    }
-  } @else
-  if $size == 'med' {
-    @media screen and ($type + -width: $breakpoint-med) {
-      @content;
-    }
-  } @else
-  if $size == 'large' {
-    @media screen and ($type + -width: $breakpoint-med) {
-      @content;
-    }
-  } @else
-  if $size == 'custom' {
-    @media screen and ($type + -width: $pixels + px) {
-      @content;
-    }
-  } @else {
-    @content;
-  }
-}
-// Шрифт
-@function calcR($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
-}
-@mixin fontse($size) {
-  font-size: $size;
-  font-size: calcR($size);
-}
-@mixin background($imgpath,$size: 100%,$positionx: center,$positiony: top,$repeat: no-repeat) {
-  background: {
-    image: url($imgpath);
-    size: $size;
-    position-x: $positionx;
-    position-y: $positiony;
-    repeat: $repeat;
-  }
-}
+@import url('https://fonts.googleapis.com/css?family=Martel');
+@import 'mixins.scss';
 $color1: #ffffff;
 $color2: #0e1d2b;
 $color3: #ffa326;
@@ -60,11 +11,20 @@ body {
   background-color: white;
 }
 
+.navbar-toggler {
+  display: none;
+}
+
 header nav {
   min-height: calcR(85px);
   background-color: $color1;
   @include screen(small) {
     min-height: auto;
+  }
+
+  .navbar-collapse {
+    flex-basis: auto;
+    flex-grow: 0;
   }
 
   .active {
@@ -109,14 +69,14 @@ section {
 #ourb {
   .col-sm-6 {
     padding: calcR(200px) 0 calcR(100px);
-    @include screen(small) {
-      padding: calcR(170px) 0;
+    @include screen(med) {
+      padding: calcR(150px) 0 calcR(50px) 0;
     }
   }
 
   p {
     padding-left: calcR(90px);
-    @include screen(small) {
+    @include screen(med) {
       padding-left: calcR(30px);
     }
   }
@@ -251,15 +211,26 @@ section {
 }
 
 #wElse {
-  @include background('../img/welse.png',cover);
+  @include background('../img/welse.png');
+  padding: 1rem;
+  @include screen(med-small) {
+    background-size: auto;
+    background-repeat: repeat;
+  }
 
   .col-sm-7 {
     padding: calcR(150px) 0;
+    @include screen(med) {
+      padding: calcR(20px) 0;
+    }
   }
 
   .col-sm-4 {
     padding: calcR(50px) 0;
     border: calcR(3px) solid $color3;
+    @include screen(med) {
+      padding: 1rem 0;
+    }
   }
 
   .we__text {
@@ -301,13 +272,14 @@ section {
   .galleryTop {
     height: calcR(190px);
     cursor: pointer;
+
     img {
-    @include screen(med-small) {
-      padding: calcR(5px) 0;
-      max-width: 100%;
-      max-height: 100%;
+      @include screen(med-small) {
+        padding: calcR(5px) 0;
+        max-width: 100%;
+        max-height: 100%;
+      }
     }
-  }
   }
 
   .galleryBot {
